@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Propagación de Virus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Propagación de Virus</h1>
+        <div class="form">
+
+            <!-- PARAMETROS DE ENTRADA -->
+
+            <label for="initialCount">Número Inicial de Computadoras (Q0):</label>
+            <input type="text" id="initialCount" placeholder="Ingrese el numero de computadoras" readonly>
+
+            <label for="simulationTime">Tiempo de Simulación (Horas):</label>
+            <input type="text" id="simulationTime" placeholder="Ingrese la cantidad de horas a simular" readonly>
+
+
+            <!-- BOTON DE SIMULACION -->
+            <button id="simulateButton">Simulacion</button>
+
+
+        </div>
+        <!-- CANVAS DE ANIMACION -->
+        <div class="canvas-container">
+            <canvas id="simulationCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
